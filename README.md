@@ -30,12 +30,19 @@ Once you'e happy press 'E' to finish, this will copy the following to the clipbo
 /createboxzone
 
 Starts the boxzone creator use the following keys to adjust the zone
+
 Scroll Up : Increase Z
+
 Scroll Down : Decrease Z
+
 Alt + Left Arrow : Decrease length
+
 Alt + Right Arrow : Increase length
+
 Alt + Down Arrow: Decrease Width
+
 Alt + Up Arrow : Increase Width
+
 
 Press enter/return to copy the following to the clipboard
 
