@@ -59,3 +59,49 @@ Press enter/return to copy the following to the clipboard
             isInside = isPointInside
         end)
         
+
+/createpolyzone
+
+Starts the polyzone creator
+E : adds points to zone vectors
+Delete : removes last point from vectors
+
+
+Press enter/return to copy the following to the clipboard
+
+    local name = 'test'
+
+    local vectors = 
+
+    {
+
+    vector2(-78.894836425781,-1084.9809570313),
+
+    vector2(-81.515068054199,-1087.6856689453),
+
+    vector2(-84.180816650391,-1091.7683105469),
+
+    vector2(-82.564666748047,-1097.3762207031),
+
+    vector2(-76.743995666504,-1100.9362792969),
+
+    vector2(-69.348655700684,-1096.087890625),
+
+    vector2(-67.446556091309,-1088.1253662109),
+
+    }
+    local minZ = 15.174879074097
+    local maxZ = 30.174879074097
+    local isInside = false
+    local zone = PolyZone:Create(vectors, {
+    name="zone",
+    minZ=minZ,
+    maxZ=maxZ,
+    debugGrid=true,
+    gridDivisions=25,
+    useZ = true
+    })
+
+    zone:onPlayerInOut(function(isPointInside, point)
+        isInside = isPointInside
+    end)
